@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Logger.o -c /home/me/muduo_ws/mmuduo/Logger.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Logger.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Logger.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Timestamp.o -c /home/me/muduo_ws/mmuduo/Timestamp.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Timestamp.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Timestamp.o"
+}
+]

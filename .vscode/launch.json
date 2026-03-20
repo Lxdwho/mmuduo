@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and debug muduo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/m_test/test_muduo.out",
+            "args": [
+                "-I/home/me/muduo_ws",
+				"-I/home/me/muduo_ws/muduo-master",
+				"-L/home/me/muduo_ws/muduo-master/build/lib",
+				"-lmuduo_net",
+                "-lmuduo_base",
+                "-lpthread"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/",
+            "environment": [{"name": "RCMW_PATH", "value": "/home/me/muduo_ws/mmuduo"}],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+    ]
+}
