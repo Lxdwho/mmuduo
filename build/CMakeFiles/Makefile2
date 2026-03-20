@@ -81,12 +81,12 @@ clean: CMakeFiles/mmuduo.dir/clean
 CMakeFiles/mmuduo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=1,2,3 "Built target mmuduo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target mmuduo"
 .PHONY : CMakeFiles/mmuduo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mmuduo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/muduo_ws/mmuduo/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/muduo_ws/mmuduo/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mmuduo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/muduo_ws/mmuduo/build/CMakeFiles 0
 .PHONY : CMakeFiles/mmuduo.dir/rule

@@ -129,35 +129,125 @@ mmuduo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/build
 .PHONY : mmuduo/fast
 
+Channel.o: Channel.cpp.o
+.PHONY : Channel.o
+
 # target to build an object file
-Logger.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Logger.o
+Channel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Channel.cpp.o
+.PHONY : Channel.cpp.o
+
+Channel.i: Channel.cpp.i
+.PHONY : Channel.i
+
+# target to preprocess a source file
+Channel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Channel.cpp.i
+.PHONY : Channel.cpp.i
+
+Channel.s: Channel.cpp.s
+.PHONY : Channel.s
+
+# target to generate assembly for a file
+Channel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Channel.cpp.s
+.PHONY : Channel.cpp.s
+
+EventLoop.o: EventLoop.cpp.o
+.PHONY : EventLoop.o
+
+# target to build an object file
+EventLoop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EventLoop.cpp.o
+.PHONY : EventLoop.cpp.o
+
+EventLoop.i: EventLoop.cpp.i
+.PHONY : EventLoop.i
+
+# target to preprocess a source file
+EventLoop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EventLoop.cpp.i
+.PHONY : EventLoop.cpp.i
+
+EventLoop.s: EventLoop.cpp.s
+.PHONY : EventLoop.s
+
+# target to generate assembly for a file
+EventLoop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EventLoop.cpp.s
+.PHONY : EventLoop.cpp.s
+
+InetAddress.o: InetAddress.cpp.o
+.PHONY : InetAddress.o
+
+# target to build an object file
+InetAddress.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/InetAddress.cpp.o
+.PHONY : InetAddress.cpp.o
+
+InetAddress.i: InetAddress.cpp.i
+.PHONY : InetAddress.i
+
+# target to preprocess a source file
+InetAddress.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/InetAddress.cpp.i
+.PHONY : InetAddress.cpp.i
+
+InetAddress.s: InetAddress.cpp.s
+.PHONY : InetAddress.s
+
+# target to generate assembly for a file
+InetAddress.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/InetAddress.cpp.s
+.PHONY : InetAddress.cpp.s
+
+Logger.o: Logger.cpp.o
 .PHONY : Logger.o
 
-# target to preprocess a source file
-Logger.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Logger.i
+# target to build an object file
+Logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Logger.cpp.o
+.PHONY : Logger.cpp.o
+
+Logger.i: Logger.cpp.i
 .PHONY : Logger.i
 
-# target to generate assembly for a file
-Logger.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Logger.s
+# target to preprocess a source file
+Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Logger.cpp.i
+.PHONY : Logger.cpp.i
+
+Logger.s: Logger.cpp.s
 .PHONY : Logger.s
 
-# target to build an object file
-Timestamp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Timestamp.o
+# target to generate assembly for a file
+Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Logger.cpp.s
+.PHONY : Logger.cpp.s
+
+Timestamp.o: Timestamp.cpp.o
 .PHONY : Timestamp.o
 
-# target to preprocess a source file
-Timestamp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Timestamp.i
+# target to build an object file
+Timestamp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Timestamp.cpp.o
+.PHONY : Timestamp.cpp.o
+
+Timestamp.i: Timestamp.cpp.i
 .PHONY : Timestamp.i
 
-# target to generate assembly for a file
-Timestamp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Timestamp.s
+# target to preprocess a source file
+Timestamp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Timestamp.cpp.i
+.PHONY : Timestamp.cpp.i
+
+Timestamp.s: Timestamp.cpp.s
 .PHONY : Timestamp.s
+
+# target to generate assembly for a file
+Timestamp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Timestamp.cpp.s
+.PHONY : Timestamp.cpp.s
 
 # Help Target
 help:
@@ -168,6 +258,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mmuduo"
+	@echo "... Channel.o"
+	@echo "... Channel.i"
+	@echo "... Channel.s"
+	@echo "... EventLoop.o"
+	@echo "... EventLoop.i"
+	@echo "... EventLoop.s"
+	@echo "... InetAddress.o"
+	@echo "... InetAddress.i"
+	@echo "... InetAddress.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"

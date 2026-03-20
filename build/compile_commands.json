@@ -1,14 +1,32 @@
 [
 {
   "directory": "/home/me/muduo_ws/mmuduo/build",
-  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Logger.o -c /home/me/muduo_ws/mmuduo/Logger.cpp",
-  "file": "/home/me/muduo_ws/mmuduo/Logger.cpp",
-  "output": "CMakeFiles/mmuduo.dir/Logger.o"
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Channel.cpp.o -c /home/me/muduo_ws/mmuduo/Channel.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Channel.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Channel.cpp.o"
 },
 {
   "directory": "/home/me/muduo_ws/mmuduo/build",
-  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Timestamp.o -c /home/me/muduo_ws/mmuduo/Timestamp.cpp",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/EventLoop.cpp.o -c /home/me/muduo_ws/mmuduo/EventLoop.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/EventLoop.cpp",
+  "output": "CMakeFiles/mmuduo.dir/EventLoop.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/InetAddress.cpp.o -c /home/me/muduo_ws/mmuduo/InetAddress.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/InetAddress.cpp",
+  "output": "CMakeFiles/mmuduo.dir/InetAddress.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Logger.cpp.o -c /home/me/muduo_ws/mmuduo/Logger.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Logger.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Logger.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Timestamp.cpp.o -c /home/me/muduo_ws/mmuduo/Timestamp.cpp",
   "file": "/home/me/muduo_ws/mmuduo/Timestamp.cpp",
-  "output": "CMakeFiles/mmuduo.dir/Timestamp.o"
+  "output": "CMakeFiles/mmuduo.dir/Timestamp.cpp.o"
 }
 ]

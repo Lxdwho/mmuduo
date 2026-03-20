@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.5)
+cmake_minimum_required(VERSION 3.6)
 project(mmuduo)
 
 # mmuduo最终编译生成so动态库，设置动态库路径，放在工作空间目录下的lib文件夹
