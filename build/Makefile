@@ -129,6 +129,30 @@ mmuduo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/build
 .PHONY : mmuduo/fast
 
+Acceptor.o: Acceptor.cpp.o
+.PHONY : Acceptor.o
+
+# target to build an object file
+Acceptor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Acceptor.cpp.o
+.PHONY : Acceptor.cpp.o
+
+Acceptor.i: Acceptor.cpp.i
+.PHONY : Acceptor.i
+
+# target to preprocess a source file
+Acceptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Acceptor.cpp.i
+.PHONY : Acceptor.cpp.i
+
+Acceptor.s: Acceptor.cpp.s
+.PHONY : Acceptor.s
+
+# target to generate assembly for a file
+Acceptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Acceptor.cpp.s
+.PHONY : Acceptor.cpp.s
+
 Channel.o: Channel.cpp.o
 .PHONY : Channel.o
 
@@ -153,6 +177,54 @@ Channel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Channel.cpp.s
 .PHONY : Channel.cpp.s
 
+CurrentThread.o: CurrentThread.cpp.o
+.PHONY : CurrentThread.o
+
+# target to build an object file
+CurrentThread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/CurrentThread.cpp.o
+.PHONY : CurrentThread.cpp.o
+
+CurrentThread.i: CurrentThread.cpp.i
+.PHONY : CurrentThread.i
+
+# target to preprocess a source file
+CurrentThread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/CurrentThread.cpp.i
+.PHONY : CurrentThread.cpp.i
+
+CurrentThread.s: CurrentThread.cpp.s
+.PHONY : CurrentThread.s
+
+# target to generate assembly for a file
+CurrentThread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/CurrentThread.cpp.s
+.PHONY : CurrentThread.cpp.s
+
+EPollPoller.o: EPollPoller.cpp.o
+.PHONY : EPollPoller.o
+
+# target to build an object file
+EPollPoller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EPollPoller.cpp.o
+.PHONY : EPollPoller.cpp.o
+
+EPollPoller.i: EPollPoller.cpp.i
+.PHONY : EPollPoller.i
+
+# target to preprocess a source file
+EPollPoller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EPollPoller.cpp.i
+.PHONY : EPollPoller.cpp.i
+
+EPollPoller.s: EPollPoller.cpp.s
+.PHONY : EPollPoller.s
+
+# target to generate assembly for a file
+EPollPoller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EPollPoller.cpp.s
+.PHONY : EPollPoller.cpp.s
+
 EventLoop.o: EventLoop.cpp.o
 .PHONY : EventLoop.o
 
@@ -176,6 +248,30 @@ EventLoop.s: EventLoop.cpp.s
 EventLoop.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EventLoop.cpp.s
 .PHONY : EventLoop.cpp.s
+
+EventLoopThread.o: EventLoopThread.cpp.o
+.PHONY : EventLoopThread.o
+
+# target to build an object file
+EventLoopThread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o
+.PHONY : EventLoopThread.cpp.o
+
+EventLoopThread.i: EventLoopThread.cpp.i
+.PHONY : EventLoopThread.i
+
+# target to preprocess a source file
+EventLoopThread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EventLoopThread.cpp.i
+.PHONY : EventLoopThread.cpp.i
+
+EventLoopThread.s: EventLoopThread.cpp.s
+.PHONY : EventLoopThread.s
+
+# target to generate assembly for a file
+EventLoopThread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/EventLoopThread.cpp.s
+.PHONY : EventLoopThread.cpp.s
 
 InetAddress.o: InetAddress.cpp.o
 .PHONY : InetAddress.o
@@ -225,6 +321,78 @@ Logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Logger.cpp.s
 .PHONY : Logger.cpp.s
 
+Poller.o: Poller.cpp.o
+.PHONY : Poller.o
+
+# target to build an object file
+Poller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Poller.cpp.o
+.PHONY : Poller.cpp.o
+
+Poller.i: Poller.cpp.i
+.PHONY : Poller.i
+
+# target to preprocess a source file
+Poller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Poller.cpp.i
+.PHONY : Poller.cpp.i
+
+Poller.s: Poller.cpp.s
+.PHONY : Poller.s
+
+# target to generate assembly for a file
+Poller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Poller.cpp.s
+.PHONY : Poller.cpp.s
+
+Socket.o: Socket.cpp.o
+.PHONY : Socket.o
+
+# target to build an object file
+Socket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Socket.cpp.o
+.PHONY : Socket.cpp.o
+
+Socket.i: Socket.cpp.i
+.PHONY : Socket.i
+
+# target to preprocess a source file
+Socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Socket.cpp.i
+.PHONY : Socket.cpp.i
+
+Socket.s: Socket.cpp.s
+.PHONY : Socket.s
+
+# target to generate assembly for a file
+Socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Socket.cpp.s
+.PHONY : Socket.cpp.s
+
+Thread.o: Thread.cpp.o
+.PHONY : Thread.o
+
+# target to build an object file
+Thread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Thread.cpp.o
+.PHONY : Thread.cpp.o
+
+Thread.i: Thread.cpp.i
+.PHONY : Thread.i
+
+# target to preprocess a source file
+Thread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Thread.cpp.i
+.PHONY : Thread.cpp.i
+
+Thread.s: Thread.cpp.s
+.PHONY : Thread.s
+
+# target to generate assembly for a file
+Thread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmuduo.dir/build.make CMakeFiles/mmuduo.dir/Thread.cpp.s
+.PHONY : Thread.cpp.s
+
 Timestamp.o: Timestamp.cpp.o
 .PHONY : Timestamp.o
 
@@ -258,18 +426,39 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mmuduo"
+	@echo "... Acceptor.o"
+	@echo "... Acceptor.i"
+	@echo "... Acceptor.s"
 	@echo "... Channel.o"
 	@echo "... Channel.i"
 	@echo "... Channel.s"
+	@echo "... CurrentThread.o"
+	@echo "... CurrentThread.i"
+	@echo "... CurrentThread.s"
+	@echo "... EPollPoller.o"
+	@echo "... EPollPoller.i"
+	@echo "... EPollPoller.s"
 	@echo "... EventLoop.o"
 	@echo "... EventLoop.i"
 	@echo "... EventLoop.s"
+	@echo "... EventLoopThread.o"
+	@echo "... EventLoopThread.i"
+	@echo "... EventLoopThread.s"
 	@echo "... InetAddress.o"
 	@echo "... InetAddress.i"
 	@echo "... InetAddress.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... Poller.o"
+	@echo "... Poller.i"
+	@echo "... Poller.s"
+	@echo "... Socket.o"
+	@echo "... Socket.i"
+	@echo "... Socket.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"

@@ -1,15 +1,39 @@
 [
 {
   "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Acceptor.cpp.o -c /home/me/muduo_ws/mmuduo/Acceptor.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Acceptor.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Acceptor.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
   "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Channel.cpp.o -c /home/me/muduo_ws/mmuduo/Channel.cpp",
   "file": "/home/me/muduo_ws/mmuduo/Channel.cpp",
   "output": "CMakeFiles/mmuduo.dir/Channel.cpp.o"
 },
 {
   "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/CurrentThread.cpp.o -c /home/me/muduo_ws/mmuduo/CurrentThread.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/CurrentThread.cpp",
+  "output": "CMakeFiles/mmuduo.dir/CurrentThread.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/EPollPoller.cpp.o -c /home/me/muduo_ws/mmuduo/EPollPoller.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/EPollPoller.cpp",
+  "output": "CMakeFiles/mmuduo.dir/EPollPoller.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
   "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/EventLoop.cpp.o -c /home/me/muduo_ws/mmuduo/EventLoop.cpp",
   "file": "/home/me/muduo_ws/mmuduo/EventLoop.cpp",
   "output": "CMakeFiles/mmuduo.dir/EventLoop.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o -c /home/me/muduo_ws/mmuduo/EventLoopThread.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/EventLoopThread.cpp",
+  "output": "CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o"
 },
 {
   "directory": "/home/me/muduo_ws/mmuduo/build",
@@ -22,6 +46,24 @@
   "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Logger.cpp.o -c /home/me/muduo_ws/mmuduo/Logger.cpp",
   "file": "/home/me/muduo_ws/mmuduo/Logger.cpp",
   "output": "CMakeFiles/mmuduo.dir/Logger.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Poller.cpp.o -c /home/me/muduo_ws/mmuduo/Poller.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Poller.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Poller.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Socket.cpp.o -c /home/me/muduo_ws/mmuduo/Socket.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Socket.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Socket.cpp.o"
+},
+{
+  "directory": "/home/me/muduo_ws/mmuduo/build",
+  "command": "/usr/bin/g++ -Dmmuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mmuduo.dir/Thread.cpp.o -c /home/me/muduo_ws/mmuduo/Thread.cpp",
+  "file": "/home/me/muduo_ws/mmuduo/Thread.cpp",
+  "output": "CMakeFiles/mmuduo.dir/Thread.cpp.o"
 },
 {
   "directory": "/home/me/muduo_ws/mmuduo/build",

@@ -73,5 +73,3 @@ private:
     EventCallback closeCallback_;
     EventCallback errorCallback_;
 };
-
-

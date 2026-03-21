@@ -69,10 +69,24 @@ include CMakeFiles/mmuduo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mmuduo.dir/flags.make
 
+CMakeFiles/mmuduo.dir/Acceptor.cpp.o: CMakeFiles/mmuduo.dir/flags.make
+CMakeFiles/mmuduo.dir/Acceptor.cpp.o: /home/me/muduo_ws/mmuduo/Acceptor.cpp
+CMakeFiles/mmuduo.dir/Acceptor.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mmuduo.dir/Acceptor.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/Acceptor.cpp.o -MF CMakeFiles/mmuduo.dir/Acceptor.cpp.o.d -o CMakeFiles/mmuduo.dir/Acceptor.cpp.o -c /home/me/muduo_ws/mmuduo/Acceptor.cpp
+
+CMakeFiles/mmuduo.dir/Acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mmuduo.dir/Acceptor.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/muduo_ws/mmuduo/Acceptor.cpp > CMakeFiles/mmuduo.dir/Acceptor.cpp.i
+
+CMakeFiles/mmuduo.dir/Acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/Acceptor.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/Acceptor.cpp -o CMakeFiles/mmuduo.dir/Acceptor.cpp.s
+
 CMakeFiles/mmuduo.dir/Channel.cpp.o: CMakeFiles/mmuduo.dir/flags.make
 CMakeFiles/mmuduo.dir/Channel.cpp.o: /home/me/muduo_ws/mmuduo/Channel.cpp
 CMakeFiles/mmuduo.dir/Channel.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mmuduo.dir/Channel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mmuduo.dir/Channel.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/Channel.cpp.o -MF CMakeFiles/mmuduo.dir/Channel.cpp.o.d -o CMakeFiles/mmuduo.dir/Channel.cpp.o -c /home/me/muduo_ws/mmuduo/Channel.cpp
 
 CMakeFiles/mmuduo.dir/Channel.cpp.i: cmake_force
@@ -83,10 +97,38 @@ CMakeFiles/mmuduo.dir/Channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/Channel.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/Channel.cpp -o CMakeFiles/mmuduo.dir/Channel.cpp.s
 
+CMakeFiles/mmuduo.dir/CurrentThread.cpp.o: CMakeFiles/mmuduo.dir/flags.make
+CMakeFiles/mmuduo.dir/CurrentThread.cpp.o: /home/me/muduo_ws/mmuduo/CurrentThread.cpp
+CMakeFiles/mmuduo.dir/CurrentThread.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mmuduo.dir/CurrentThread.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/CurrentThread.cpp.o -MF CMakeFiles/mmuduo.dir/CurrentThread.cpp.o.d -o CMakeFiles/mmuduo.dir/CurrentThread.cpp.o -c /home/me/muduo_ws/mmuduo/CurrentThread.cpp
+
+CMakeFiles/mmuduo.dir/CurrentThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mmuduo.dir/CurrentThread.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/muduo_ws/mmuduo/CurrentThread.cpp > CMakeFiles/mmuduo.dir/CurrentThread.cpp.i
+
+CMakeFiles/mmuduo.dir/CurrentThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/CurrentThread.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/CurrentThread.cpp -o CMakeFiles/mmuduo.dir/CurrentThread.cpp.s
+
+CMakeFiles/mmuduo.dir/EPollPoller.cpp.o: CMakeFiles/mmuduo.dir/flags.make
+CMakeFiles/mmuduo.dir/EPollPoller.cpp.o: /home/me/muduo_ws/mmuduo/EPollPoller.cpp
+CMakeFiles/mmuduo.dir/EPollPoller.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mmuduo.dir/EPollPoller.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/EPollPoller.cpp.o -MF CMakeFiles/mmuduo.dir/EPollPoller.cpp.o.d -o CMakeFiles/mmuduo.dir/EPollPoller.cpp.o -c /home/me/muduo_ws/mmuduo/EPollPoller.cpp
+
+CMakeFiles/mmuduo.dir/EPollPoller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mmuduo.dir/EPollPoller.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/muduo_ws/mmuduo/EPollPoller.cpp > CMakeFiles/mmuduo.dir/EPollPoller.cpp.i
+
+CMakeFiles/mmuduo.dir/EPollPoller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/EPollPoller.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/EPollPoller.cpp -o CMakeFiles/mmuduo.dir/EPollPoller.cpp.s
+
 CMakeFiles/mmuduo.dir/EventLoop.cpp.o: CMakeFiles/mmuduo.dir/flags.make
 CMakeFiles/mmuduo.dir/EventLoop.cpp.o: /home/me/muduo_ws/mmuduo/EventLoop.cpp
 CMakeFiles/mmuduo.dir/EventLoop.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mmuduo.dir/EventLoop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mmuduo.dir/EventLoop.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/EventLoop.cpp.o -MF CMakeFiles/mmuduo.dir/EventLoop.cpp.o.d -o CMakeFiles/mmuduo.dir/EventLoop.cpp.o -c /home/me/muduo_ws/mmuduo/EventLoop.cpp
 
 CMakeFiles/mmuduo.dir/EventLoop.cpp.i: cmake_force
@@ -97,10 +139,24 @@ CMakeFiles/mmuduo.dir/EventLoop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/EventLoop.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/EventLoop.cpp -o CMakeFiles/mmuduo.dir/EventLoop.cpp.s
 
+CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o: CMakeFiles/mmuduo.dir/flags.make
+CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o: /home/me/muduo_ws/mmuduo/EventLoopThread.cpp
+CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o -MF CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o.d -o CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o -c /home/me/muduo_ws/mmuduo/EventLoopThread.cpp
+
+CMakeFiles/mmuduo.dir/EventLoopThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mmuduo.dir/EventLoopThread.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/muduo_ws/mmuduo/EventLoopThread.cpp > CMakeFiles/mmuduo.dir/EventLoopThread.cpp.i
+
+CMakeFiles/mmuduo.dir/EventLoopThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/EventLoopThread.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/EventLoopThread.cpp -o CMakeFiles/mmuduo.dir/EventLoopThread.cpp.s
+
 CMakeFiles/mmuduo.dir/InetAddress.cpp.o: CMakeFiles/mmuduo.dir/flags.make
 CMakeFiles/mmuduo.dir/InetAddress.cpp.o: /home/me/muduo_ws/mmuduo/InetAddress.cpp
 CMakeFiles/mmuduo.dir/InetAddress.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mmuduo.dir/InetAddress.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mmuduo.dir/InetAddress.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/InetAddress.cpp.o -MF CMakeFiles/mmuduo.dir/InetAddress.cpp.o.d -o CMakeFiles/mmuduo.dir/InetAddress.cpp.o -c /home/me/muduo_ws/mmuduo/InetAddress.cpp
 
 CMakeFiles/mmuduo.dir/InetAddress.cpp.i: cmake_force
@@ -114,7 +170,7 @@ CMakeFiles/mmuduo.dir/InetAddress.cpp.s: cmake_force
 CMakeFiles/mmuduo.dir/Logger.cpp.o: CMakeFiles/mmuduo.dir/flags.make
 CMakeFiles/mmuduo.dir/Logger.cpp.o: /home/me/muduo_ws/mmuduo/Logger.cpp
 CMakeFiles/mmuduo.dir/Logger.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mmuduo.dir/Logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mmuduo.dir/Logger.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/Logger.cpp.o -MF CMakeFiles/mmuduo.dir/Logger.cpp.o.d -o CMakeFiles/mmuduo.dir/Logger.cpp.o -c /home/me/muduo_ws/mmuduo/Logger.cpp
 
 CMakeFiles/mmuduo.dir/Logger.cpp.i: cmake_force
@@ -125,10 +181,52 @@ CMakeFiles/mmuduo.dir/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/Logger.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/Logger.cpp -o CMakeFiles/mmuduo.dir/Logger.cpp.s
 
+CMakeFiles/mmuduo.dir/Poller.cpp.o: CMakeFiles/mmuduo.dir/flags.make
+CMakeFiles/mmuduo.dir/Poller.cpp.o: /home/me/muduo_ws/mmuduo/Poller.cpp
+CMakeFiles/mmuduo.dir/Poller.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mmuduo.dir/Poller.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/Poller.cpp.o -MF CMakeFiles/mmuduo.dir/Poller.cpp.o.d -o CMakeFiles/mmuduo.dir/Poller.cpp.o -c /home/me/muduo_ws/mmuduo/Poller.cpp
+
+CMakeFiles/mmuduo.dir/Poller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mmuduo.dir/Poller.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/muduo_ws/mmuduo/Poller.cpp > CMakeFiles/mmuduo.dir/Poller.cpp.i
+
+CMakeFiles/mmuduo.dir/Poller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/Poller.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/Poller.cpp -o CMakeFiles/mmuduo.dir/Poller.cpp.s
+
+CMakeFiles/mmuduo.dir/Socket.cpp.o: CMakeFiles/mmuduo.dir/flags.make
+CMakeFiles/mmuduo.dir/Socket.cpp.o: /home/me/muduo_ws/mmuduo/Socket.cpp
+CMakeFiles/mmuduo.dir/Socket.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mmuduo.dir/Socket.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/Socket.cpp.o -MF CMakeFiles/mmuduo.dir/Socket.cpp.o.d -o CMakeFiles/mmuduo.dir/Socket.cpp.o -c /home/me/muduo_ws/mmuduo/Socket.cpp
+
+CMakeFiles/mmuduo.dir/Socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mmuduo.dir/Socket.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/muduo_ws/mmuduo/Socket.cpp > CMakeFiles/mmuduo.dir/Socket.cpp.i
+
+CMakeFiles/mmuduo.dir/Socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/Socket.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/Socket.cpp -o CMakeFiles/mmuduo.dir/Socket.cpp.s
+
+CMakeFiles/mmuduo.dir/Thread.cpp.o: CMakeFiles/mmuduo.dir/flags.make
+CMakeFiles/mmuduo.dir/Thread.cpp.o: /home/me/muduo_ws/mmuduo/Thread.cpp
+CMakeFiles/mmuduo.dir/Thread.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mmuduo.dir/Thread.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/Thread.cpp.o -MF CMakeFiles/mmuduo.dir/Thread.cpp.o.d -o CMakeFiles/mmuduo.dir/Thread.cpp.o -c /home/me/muduo_ws/mmuduo/Thread.cpp
+
+CMakeFiles/mmuduo.dir/Thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mmuduo.dir/Thread.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/muduo_ws/mmuduo/Thread.cpp > CMakeFiles/mmuduo.dir/Thread.cpp.i
+
+CMakeFiles/mmuduo.dir/Thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mmuduo.dir/Thread.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/muduo_ws/mmuduo/Thread.cpp -o CMakeFiles/mmuduo.dir/Thread.cpp.s
+
 CMakeFiles/mmuduo.dir/Timestamp.cpp.o: CMakeFiles/mmuduo.dir/flags.make
 CMakeFiles/mmuduo.dir/Timestamp.cpp.o: /home/me/muduo_ws/mmuduo/Timestamp.cpp
 CMakeFiles/mmuduo.dir/Timestamp.cpp.o: CMakeFiles/mmuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mmuduo.dir/Timestamp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mmuduo.dir/Timestamp.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mmuduo.dir/Timestamp.cpp.o -MF CMakeFiles/mmuduo.dir/Timestamp.cpp.o.d -o CMakeFiles/mmuduo.dir/Timestamp.cpp.o -c /home/me/muduo_ws/mmuduo/Timestamp.cpp
 
 CMakeFiles/mmuduo.dir/Timestamp.cpp.i: cmake_force
@@ -141,23 +239,37 @@ CMakeFiles/mmuduo.dir/Timestamp.cpp.s: cmake_force
 
 # Object files for target mmuduo
 mmuduo_OBJECTS = \
+"CMakeFiles/mmuduo.dir/Acceptor.cpp.o" \
 "CMakeFiles/mmuduo.dir/Channel.cpp.o" \
+"CMakeFiles/mmuduo.dir/CurrentThread.cpp.o" \
+"CMakeFiles/mmuduo.dir/EPollPoller.cpp.o" \
 "CMakeFiles/mmuduo.dir/EventLoop.cpp.o" \
+"CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o" \
 "CMakeFiles/mmuduo.dir/InetAddress.cpp.o" \
 "CMakeFiles/mmuduo.dir/Logger.cpp.o" \
+"CMakeFiles/mmuduo.dir/Poller.cpp.o" \
+"CMakeFiles/mmuduo.dir/Socket.cpp.o" \
+"CMakeFiles/mmuduo.dir/Thread.cpp.o" \
 "CMakeFiles/mmuduo.dir/Timestamp.cpp.o"
 
 # External object files for target mmuduo
 mmuduo_EXTERNAL_OBJECTS =
 
+/home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/Acceptor.cpp.o
 /home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/Channel.cpp.o
+/home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/CurrentThread.cpp.o
+/home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/EPollPoller.cpp.o
 /home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/EventLoop.cpp.o
+/home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/EventLoopThread.cpp.o
 /home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/InetAddress.cpp.o
 /home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/Logger.cpp.o
+/home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/Poller.cpp.o
+/home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/Socket.cpp.o
+/home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/Thread.cpp.o
 /home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/Timestamp.cpp.o
 /home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/build.make
 /home/me/muduo_ws/mmuduo/lib/libmmuduo.so: CMakeFiles/mmuduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library /home/me/muduo_ws/mmuduo/lib/libmmuduo.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/me/muduo_ws/mmuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX shared library /home/me/muduo_ws/mmuduo/lib/libmmuduo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mmuduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
