@@ -12,6 +12,10 @@ const int kNew = -1;
 const int kAdded = 1;
 const int kDeleted = 2;
 
+/**
+ * @brief 构造函数，会创建一个epoll
+ * @param loop 对应的Eventloop
+ */
 EpollPoller::EpollPoller(EventLoop* loop)
      : Poller(loop)
      , epollfd_(::epoll_create1(EPOLL_CLOEXEC))
@@ -21,10 +25,18 @@ EpollPoller::EpollPoller(EventLoop* loop)
     }
 }
 
+/**
+ * @brief 析构函数，关闭epoll
+ */
 EpollPoller::~EpollPoller() {
     ::close(epollfd_);
 }
 
+/**
+ * @brief epoll进行监听
+ * @param timeoutMs 监听超时时间
+ * @param activeChannels 监听到的有事件的channel，传出参数
+ */
 Timestamp EpollPoller::poll(int timeoutMs, ChannelList* activeChannels) {
     LOG_DEBUG("func=%s => fd total count:%lu \n", __FUNCTION__, channels_.size());
     
@@ -50,6 +62,10 @@ Timestamp EpollPoller::poll(int timeoutMs, ChannelList* activeChannels) {
     return now;
 }
 
+/**
+ * @brief 更新channel状态：加入、删除、修改感兴趣事件
+ * @param channel 要更新的channel
+ */
 void EpollPoller::updateChannel(Channel* channel) {
     const int index = channel->index();
     LOG_INFO("func=%s => fd=%d events=%d index=%d \n", __FUNCTION__, channel->fd(), channel->events(), index);
@@ -73,6 +89,10 @@ void EpollPoller::updateChannel(Channel* channel) {
     }
 }
 
+/**
+ * @brief 删除channel
+ * @param channel 要删除的channel
+ */
 void EpollPoller::removeChannel(Channel* channel) {
     int fd = channel->fd();
     channels_.erase(fd);
@@ -86,6 +106,11 @@ void EpollPoller::removeChannel(Channel* channel) {
     channel->set_index(kNew);
 }
 
+/**
+ * @brief 设置有事件发生的channel的事件类型
+ * @param numEvents 发生事件的channel的数量
+ * @param activeChannels 存储发生事件的channel，传出参数
+ */
 void EpollPoller::fillActiveChannels(int numEvents, ChannelList* activeChannels) const {
     for(int i=0; i<numEvents; ++i) {
         Channel* channel = static_cast<Channel*>(events_[i].data.ptr);
@@ -94,6 +119,11 @@ void EpollPoller::fillActiveChannels(int numEvents, ChannelList* activeChannels)
     }
 }
 
+/**
+ * @brief 在epoll中对channel进行加入、删除、修改感兴趣事件
+ * @param operation 对应操作：加入、删除、修改
+ * @param channel 对应channel
+ */
 void EpollPoller::update(int operation, Channel* channel) {
     epoll_event event;
     bzero(&event, sizeof event);

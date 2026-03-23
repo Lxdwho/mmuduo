@@ -13,7 +13,7 @@ namespace CurrentThread {
     extern __thread int t_cachedTid;
 
     void cacheTid();
-
+    /* 返回调用线程id */
     inline int tid() {
         if(__builtin_expect(t_cachedTid == 0, 0)) {
             cacheTid();

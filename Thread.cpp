@@ -22,6 +22,9 @@ Thread::~Thread() {
     }
 }
 
+/**
+ * @brief 线程启动，启动完成后退出
+ */
 void Thread::start() {
     started_ = true;
     sem_t sem;
@@ -35,6 +38,9 @@ void Thread::start() {
     sem_wait(&sem);
 }
 
+/**
+ * @brief 线程join
+ */
 void Thread::join() {
     joined_ = true;
     thread_->join();

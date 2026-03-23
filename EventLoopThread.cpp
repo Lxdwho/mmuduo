@@ -23,6 +23,10 @@ EventLoopThread::~EventLoopThread() {
     }
 }
 
+/**
+ * @brief 开启循环，等待线程loop创建后退出，返回loop
+ * @return 返回线程对应的Loop
+ */
 EventLoop* EventLoopThread::startLoop() {
     thread_.start();
     EventLoop* loop = nullptr;
@@ -36,6 +40,9 @@ EventLoop* EventLoopThread::startLoop() {
     return loop;
 }
 
+/**
+ * @brief 线程执行体，会实例化一个eventloop
+ */
 void EventLoopThread::threadFunc() {
     EventLoop loop;
     if(callback_) {

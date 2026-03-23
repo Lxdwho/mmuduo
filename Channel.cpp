@@ -16,6 +16,10 @@ Channel::Channel(EventLoop* loop, int fd)
     : loop_(loop), fd_(fd), events_(0), revents_(0), index_(-1), tied_(false) {}
 Channel::~Channel() {}
 
+/**
+ * @brief 处理发生的事件
+ * @param receiveTime 发生时间
+ */
 void Channel::handlerEvent(Timestamp receiveTime) {
     if(tied_) {
         std::shared_ptr<void> guard = tie_.lock(); // weak_ptr!!!!
@@ -26,19 +30,33 @@ void Channel::handlerEvent(Timestamp receiveTime) {
     }
 }
 
+/**
+ * @brief 设置tie指针
+ * @param obj 对应的EventLoop智能指针
+ */
 void Channel::tie(const std::shared_ptr<void>& obj) {
     tie_ = obj;
     tied_ = true;
 }
 
+/**
+ * @brief 从channel所属的EventLoop中删除
+ */
 void Channel::remove() {
     loop_->removeChannel(this);
 }
 
+/**
+ * @brief 更新channel状态：加入、删除、修改
+ */
 void Channel::update() {
     loop_->updateChannel(this);
 }
 
+/**
+ * @brief 根据发生事件类型调用对应回调
+ * @param receiveTime 发生时间
+ */
 void Channel::handleEventWithGuard(Timestamp receiveTime) {
     LOG_INFO("channel handlerEvent revents:%d\n", revents_);
     if ((revents_ & EPOLLHUP) && !(revents_ & EPOLLIN))

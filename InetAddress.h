@@ -9,6 +9,9 @@
 #include <netinet/in.h>
 #include <string>
 
+/**
+ * @brief 对socket_in地址的封装
+ */
 class InetAddress {
 public:
     explicit InetAddress(uint64_t port = 0, std::string ip = "127.0.0.1");
@@ -18,7 +21,16 @@ public:
     std::string toIpPort() const;
     uint16_t toPort() const;
 
+    /**
+     * @brief 返回socket地址
+     * @return socket_in地址指针，常量指针
+     */
     const sockaddr_in* getSockAddr() const { return &addr_; }
+    
+    /**
+     * @brief 设置socket地址
+     * @param addr socket地址，常引用
+     */
     void setSockAddr(const sockaddr_in& addr) { addr_ = addr; }
 private:
     sockaddr_in addr_;

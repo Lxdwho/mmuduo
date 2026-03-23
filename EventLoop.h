@@ -17,6 +17,9 @@
 class Channel;
 class Poller;
 
+/**
+ * @brief 事件循环
+ */
 class EventLoop : muduo::noncopyable {
 public:
     using Functor = std::function<void()>;

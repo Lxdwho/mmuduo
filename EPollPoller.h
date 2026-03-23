@@ -10,6 +10,9 @@
 
 class Channel;
 
+/**
+ * @brief epoll多路复用Poller
+ */
 class EpollPoller : public Poller {
 public:
     EpollPoller(EventLoop* loop);

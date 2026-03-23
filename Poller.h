@@ -10,6 +10,9 @@
 #include <unordered_map>
 #include "Channel.h"
 
+/**
+ * @brief 多路IO复用基类
+ */
 class Poller : muduo::noncopyable {
 public:
     using ChannelList = std::vector<Channel*>;

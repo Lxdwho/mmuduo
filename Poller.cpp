@@ -7,6 +7,10 @@
 
 Poller::Poller(EventLoop* loop) : ownerLoop_(loop) { }
 
+/**
+ * @brief 查找是否存在某个channel
+ * @param channel 需要查找的channel
+ */
 bool Poller::hasChannel(Channel* channel) const {
     auto it = channels_.find(channel->fd());
     return it != channels_.end() && it->second == channel;

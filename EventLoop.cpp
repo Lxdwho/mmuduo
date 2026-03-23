@@ -14,6 +14,9 @@ __thread EventLoop* t_loopInThisThread = nullptr;
 
 const int KPollTimeMs = 10000;
 
+/**
+ * @brief 创建一个事件fd
+ */
 int createEventfd() {
     int evtfd = ::eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC);
     if(evtfd < 0) {
@@ -47,6 +50,9 @@ EventLoop::~EventLoop() {
     t_loopInThisThread = nullptr;
 }
 
+/**
+ * @brief 开启监听
+ */
 void EventLoop::loop() {
     looping_ = true;
     quit_ = false;
@@ -65,17 +71,28 @@ void EventLoop::loop() {
     looping_ = false;
 }
 
+/**
+ * @brief 退出监听
+ */
 void EventLoop::quit() {
     quit_ = true;
     // 其他线程中调用quit，需要做唤醒操作？？？？？？？？？？？
     if(!isInLoopThread()) wakeup();
 }
 
+/**
+ * @brief 在EventLoop所属线程中执行cb
+ * @param cb 要执行的回调
+ */
 void EventLoop::runInLoop(Functor cb) {
     if(isInLoopThread()) cb();  // 在当前loop线程中，直接执行
     else queueInLoop(cb);       // 不在当前loop线程，先存，唤醒后再执行
 }
 
+/**
+ * @brief 将cb加入到回调队列
+ * @param cb 要加入的回调
+ */
 void EventLoop::queueInLoop(Functor cb) {
     {
         std::unique_lock<std::mutex> lock(mutex_);
@@ -84,10 +101,16 @@ void EventLoop::queueInLoop(Functor cb) {
     if(!isInLoopThread() || callingPendingFunctors_) wakeup();
 }
 
+/* 更新指定channel状态 */
 void EventLoop::updateChannel(Channel* channel) { poller_->updateChannel(channel); }
+
+/* 删除指定channel */
 void EventLoop::removeChannel(Channel* channel) { poller_->removeChannel(channel); }
+
+/* 查找指定channel */
 bool EventLoop::hasChannel(Channel* channel) { return poller_->hasChannel(channel); }
 
+/* EventLoop被唤醒处理函数 */
 void EventLoop::handlerRead() {
     uint64_t one = 1;
     ssize_t n = read(wakeupFd_, &one, sizeof one);
@@ -96,6 +119,7 @@ void EventLoop::handlerRead() {
     }
 }
 
+/* EventLoop唤醒函数 */
 void EventLoop::wakeup() {
     uint64_t one = 1;
     ssize_t n = write(wakeupFd_, &one, sizeof one);
@@ -104,6 +128,9 @@ void EventLoop::wakeup() {
     }
 }
 
+/**
+ * @brief 执行在其他线程加入的回调函数
+ */
 void EventLoop::doPendingFunctors() {
     std::vector<Functor> functors;
     callingPendingFunctors_ = true;
