@@ -15,6 +15,10 @@ EventLoopThreadPool::EventLoopThreadPool(EventLoop* baseLoop, const std::string&
 
 EventLoopThreadPool::~EventLoopThreadPool() {}
 
+/**
+ * @brief 启动线程池，根据numThreads_创建线程，numThreads_==0则只创建baseloop线程
+ * @param cb 线程初始化回调，每个线程都需要传入
+ */
 void EventLoopThreadPool::start(const ThreadLoopInitCallback& cb) {
     started_ = true;
     for(int i=0; i<numThreads_; i++) {
@@ -27,6 +31,10 @@ void EventLoopThreadPool::start(const ThreadLoopInitCallback& cb) {
     if(numThreads_ == 0 && cb) cb(baseloop_);
 }
 
+/**
+ * @brief 获取线程对象，numThreads_==0则直接返回baseloop
+ * @return 返回线程的eventloop
+ */
 EventLoop* EventLoopThreadPool::getNextLoop() {
     EventLoop* loop = baseloop_;
     if(!loops_.empty()) {
@@ -37,6 +45,10 @@ EventLoop* EventLoopThreadPool::getNextLoop() {
     return loop;
 }
 
+/**
+ * @brief 返回所有线程的eventloop
+ * @return 返回所有线程的eventloop
+ */
 std::vector<EventLoop*> EventLoopThreadPool::getAllLoops() {
     if(loops_.empty()) return std::vector<EventLoop*>(1, baseloop_);
     else return loops_;

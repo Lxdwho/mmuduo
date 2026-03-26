@@ -33,12 +33,18 @@ Acceptor::~Acceptor() {
     acceptChannel_.remove();
 }
 
+/**
+ * @brief 设置为监听状态
+ */
 void Acceptor::listen() {
     listenning_ = true;
     acceptSocket_.listen();
     acceptChannel_.enableReading();
 }
 
+/**
+ * @brief 新连接到来处理函数
+ */
 void Acceptor::handleRead() {
     InetAddress peerAddr;
     int connfd = acceptSocket_.accept(&peerAddr);

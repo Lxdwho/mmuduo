@@ -6,10 +6,12 @@
 #include <functional>
 #include <iostream>
 #include <string>
-#include "muduo-master/muduo/net/TcpServer.h"
-#include "muduo-master/muduo/net/EventLoop.h"
+// #include "muduo-master/muduo/net/TcpServer.h"
+// #include "muduo-master/muduo/net/EventLoop.h"
+#include "../TcpServer.h"
+#include "../EventLoop.h"
 
-using namespace muduo::net;
+// using namespace muduo::net;
 using namespace muduo;
 
 /**
@@ -31,7 +33,7 @@ public:
 		server_.setMessageCallback(std::bind(&ChatServer::onMessage, this, 
 				std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 		// 设置服务器端的线程数量
-		server_.setThreadNum(4);
+		server_.setThreadNum(0);
     }
 	
 	// 开启事件循环
@@ -65,7 +67,7 @@ private:
 
 int main() {
     EventLoop loop;
-    InetAddress addr("127.0.0.1", 6000);
+    InetAddress addr(6000, "127.0.0.1");
     ChatServer server(&loop, addr, "ChartServer");
 
     server.start();

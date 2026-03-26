@@ -1,8 +1,15 @@
+# test_muduo:
+# 	g++ test_muduo.cpp -I/home/me/muduo_ws 							\
+# 						-I/home/me/muduo_ws/muduo-master 			\
+# 						-L/home/me/muduo_ws/muduo-master/build/lib 	\
+# 						-lmuduo_net -lmuduo_base -lpthread 			\
+# 						-o test_muduo.out
+
 test_muduo:
-	g++ test_muduo.cpp -I/home/me/muduo_ws 							\
-						-I/home/me/muduo_ws/muduo-master 			\
-						-L/home/me/muduo_ws/muduo-master/build/lib 	\
-						-lmuduo_net -lmuduo_base -lpthread 			\
+	g++ test_muduo.cpp	-I/home/me/muduo_ws/mmuduo					\
+						-I/home/me/muduo_ws/mmuduo/mytest			\
+						-L/home/me/muduo_ws/mmuduo/lib/				\
+						-lmmuduo -lpthread							\
 						-o test_muduo.out
 
 test_Timestamp:

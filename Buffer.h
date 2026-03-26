@@ -55,7 +55,7 @@ public:
     }
 
     /* 以字符串形式读取所有数据 */
-    std::string retrieveAllString() { return retrieveAsString(readableBytes()); }
+    std::string retrieveAllAsString() { return retrieveAsString(readableBytes()); }
 
     /**
      * @brief 写入时检查空间是否足够

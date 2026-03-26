@@ -8,7 +8,7 @@
 #include "noncopyable.h"
 #include <iostream>
 
-#define MUDEBUG
+// #define MUDEBUG
 
 #define LOG_INFO(logmsgFormat, ...) do{                     \
         Logger& logger = Logger::Instance();                \

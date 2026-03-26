@@ -14,18 +14,27 @@
 
 Socket::~Socket() { close(sockfd_); }
 
+/**
+ * @brief 绑定地址
+ */
 void Socket::bindAddress(const InetAddress& localaddr) {
     if(::bind(sockfd_, (sockaddr*)localaddr.getSockAddr(), sizeof(sockaddr_in)) != 0) {
         LOG_FATAL("bind sockfd:%d fail\n", sockfd_);
     }
 }
 
+/**
+ * @brief 将套接字 sockfd_ 转为监听状态，并设置半连接队列的最大长度为 1024
+ */
 void Socket::listen() {
     if(::listen(sockfd_, 1024) != 0) {
         LOG_FATAL("listen sockfd:%d fail\n", sockfd_);
     }
 }
 
+/**
+ * @brief 接收连接，返回sockfd以及socket地址
+ */
 int Socket::accept(InetAddress* peeraddr) {
     sockaddr_in addr;
     socklen_t len = sizeof addr;
@@ -37,6 +46,9 @@ int Socket::accept(InetAddress* peeraddr) {
     return connfd;
 }
 
+/**
+ * @brief 关闭写端fd
+ */
 void Socket::shutdownWrite() {
     if(::shutdown(sockfd_, SHUT_WR) < 0) {
         LOG_ERROR("shutdownWrite error");

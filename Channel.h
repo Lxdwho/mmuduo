@@ -44,15 +44,15 @@ public:
     /* 设置channel对应fd发生的事件 */
     void set_revents(int revt) { revents_ = revt; }
 
-    /* 让channel对读感兴趣 */
+    /* 让channel对读感兴趣，并在所属loop中使能 */
     void enableReading()  { events_ |=  KReadEvent ; update(); }
-    /* 让channel对写感兴趣 */
+    /* 让channel对写感兴趣，并在所属loop中使能 */
     void enablewriting()  { events_ |=  KWriteEvent; update(); }
-    /* 让channel对读不感兴趣 */
+    /* 让channel对读不感兴趣，并在所属loop中使能 */
     void disableReading() { events_ &= ~KReadEvent ; update(); }
-    /* 让channel对写不感兴趣 */
+    /* 让channel对写不感兴趣，并在所属loop中使能 */
     void disableWriting() { events_ &= ~KWriteEvent; update(); }
-    /* 让channel对所有事件不感兴趣 */
+    /* 让channel对所有事件不感兴趣，并在所属loop中使能 */
     void disableAll()     { events_  =  KNoneEvent ; update(); }
 
     /* 返回channel是否对所有事件不感兴趣 */
